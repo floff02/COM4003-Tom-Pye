@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Personal Student Profile</title>
+  <link rel="icon" type="image/x-icon" href="PSP Logo.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <div class = "NavBar">
+    <div class = "PSPLogo">
+      <img src = "Assets/PSP Logo.png" width = "150px" height="100px">
+    </div>
+      <div class = "Buttons">
+        <button class ="Button" onclick = "document.location = 'index.html'">Home Page</button>
+        <button class ="Button" onclick = "document.location = 'employer.html'">Employers</button>
+        <button class ="Button" onclick = "document.location = 'index.html'">Login</button>
+      </div>
+  
+  </div>
+  <div class = "main">
+    <div class = "row">
+        <div class = "Stcolumn" id = "column">
+        <fieldset class = "StudentInput">
+          <legend>Student, please enter your details below</legend>
+          <form action = "employer.html" method = "GET">
+            <label for = "ForeName">Forename:</label>
+            <input type = "text" id = "ForeName" name = "ForeName" required minlength = "2" maxlength = "20" size = "20">
+            <label for = "SurName">Surname:</label>
+            <input type = "text" id = "SurName" name = "SurName" required minlength = "2" maxlength = "20" size = "20">
+            <label for = "Email">Email Address:</label>
+            <input type = "email" id= "Email" name= "Email" required minlength = "3" maxlength = "50" size = "20">
+            <label for = "career">Desired Career:</label>
+            <input type = "text" id= "Career" name= "career" required minlength = "3" maxlength = "25" size = "20">
+            <label for ="Image">Profile Picture:</label>
+            <input type="file" id="PFPFile" name="PFPfile" required>
+            
+          
+            
+            <h2 for = "Qemployed">Are you Employed in any manner?</h2>
+
+            <label for = "Employed"> Yes, i'm employed</label> 
+            <input type = "radio" id = "Employed" name = "emp_status" required> 
+            
+            <label for = "UnEmployed"> No, i'm not employed</label> 
+            <input type = "radio" id = "UnEmployed" name = "emp_status" required><br>
+          
+            <h2 for = "WorkExp">Do you have any work experience in your desired career within the past 12 months?</h2>
+
+            <label for = "Experience"> Yes, I have experience</label> 
+            <input type = "radio" id = "Experience" name = "exp_status" required> 
+            
+            <label for = "NExperience"> No, I do not have experience</label> 
+            <input type = "radio" id = "NExperience" name = "exp_status" required><br>
+            
+            <h2 for = "Qemployed">Please Enter your top 2 key Skills</h2>
+            <label for = "KeySkill1">Keyskill 1:</label>
+            <input type = "text" id = "KeySkill1" name = "KeySkill1" required minlength = "2" maxlength = "20" size = "20">
+            <label for = "KeySkill2">KeySkill2:</label>
+            <input type = "text" id = "KeySkill2" name = "KeySkill2" required minlength = "2" maxlength = "20" size = "20"><br>
+
+            <label for = "DataCheck">Please check this box to agree to the T&Cs of Person Student Profiles, data will be shared with employers to allow employers to find you</label>
+            <input type = "checkbox" id = "DataCheck" name = "TCs" required><br>
+            <input type="submit" value = "OK" onclick = "'" required>
+          </form>
+          
+        </fieldset>
+        </div>
+        <!--<div class = "column" id = "column">
+          
+        </div>-->
+    </div>
+  </div>
+</body>
